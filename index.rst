@@ -12,9 +12,24 @@ Graphviz Tutorial 目录
    chap01
 
 
+参考资料
+==============================================================================
+
+#. `Graphviz 官网`_
+#. `Graphviz 官方 DOT 指南`_
+#. `使用 Graphviz 绘制流程图`_
+
+
 索引
 ==============================================================================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+
+.. _Graphviz 官网: http://www.graphviz.org/
+.. _Graphviz 官方 DOT 指南: http://www.graphviz.org/pdf/dotguide.pdf
+.. _使用 Graphviz 绘制流程图: http://www.cnblogs.com/CoolJie/archive/2012/07/17/graphviz.html
+
