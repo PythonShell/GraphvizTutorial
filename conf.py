@@ -19,7 +19,8 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import cloud_sptheme as csp
+
+#import cloud_sptheme as csp
 #import sphinx_bootstrap_theme
 
 
@@ -34,11 +35,13 @@ import cloud_sptheme as csp
 # ones.
 extensions = ['sphinx.ext.todo',
     'sphinx.ext.coverage',
-    'sphinxcontrib.googleanalytics',
     'sphinx.ext.mathjax']
+''' Google Analytics Extension:
+    'sphinxcontrib.googleanalytics',
+    '''
 
 # Google Analytics Track ID
-googleanalytics_id = 'UA-92005714-1'
+#googleanalytics_id = 'UA-92005714-1'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
