@@ -19,6 +19,8 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import cloud_sptheme as csp
+#import sphinx_bootstrap_theme
 
 
 # -- General configuration ------------------------------------------------
@@ -32,7 +34,11 @@
 # ones.
 extensions = ['sphinx.ext.todo',
     'sphinx.ext.coverage',
+    'sphinxcontrib.googleanalytics',
     'sphinx.ext.mathjax']
+
+# Google Analytics Track ID
+googleanalytics_id = 'UA-92005714-1'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -86,6 +92,17 @@ todo_include_todos = True
 #
 #html_theme = 'alabaster'
 html_theme = 'sphinxdoc'
+
+# Cloud Theme
+#html_theme = 'cloud'
+# set the theme path to point to cloud's theme data
+#html_theme_path = [csp.get_theme_dir()]
+# [optional] set some of the options listed above...
+#html_theme_options = { "roottarget": "index" }
+
+# Sphinx Bootstrap Theme
+#html_theme = 'bootstrap'
+#html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

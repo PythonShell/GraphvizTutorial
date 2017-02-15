@@ -78,3 +78,29 @@ Graphviz 支持 UTF8 下的中文。
 
 .. image:: _static/examples/graph03.jpg
 
+
+1.4 指定有向图箭头方向
+------------------------------------------------------------------------------
+
+对每条边设置 dir 参数，可以设置每条线的方向。
+
+.. code-block:: none
+    :linenos:
+    :caption: graph04.dot
+    :name: Graph 04
+
+    digraph html {
+        A -> B [dir = both];
+        B -> C [dir = none];
+        C -> D [dir = back];
+        D -> A [dir = forward];
+    }
+
+编译可以得到如下的图片：
+
+.. image:: _static/examples/graph04.jpg
+
+
+1.5 
+------------------------------------------------------------------------------
+
