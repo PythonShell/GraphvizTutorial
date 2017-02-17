@@ -18,6 +18,7 @@ Graphviz Tutorial 目录
 #. `Graphviz 官网`_
 #. `Graphviz 官方 DOT 指南`_
 #. `使用 Graphviz 绘制流程图`_
+#. `《Redis 设计与实现》图片集`_
 
 
 索引
@@ -32,4 +33,5 @@ Graphviz Tutorial 目录
 .. _Graphviz 官网: http://www.graphviz.org/
 .. _Graphviz 官方 DOT 指南: http://www.graphviz.org/pdf/dotguide.pdf
 .. _使用 Graphviz 绘制流程图: http://www.cnblogs.com/CoolJie/archive/2012/07/17/graphviz.html
+.. _《Redis 设计与实现》图片集: http://1e-gallery.redisbook.com/
 
