@@ -20,8 +20,9 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-#import cloud_sptheme as csp
+import cloud_sptheme as csp
 #import sphinx_bootstrap_theme
+#import sphinx_rtd_theme
 
 
 # -- General configuration ------------------------------------------------
@@ -95,14 +96,14 @@ todo_include_todos = True
 #
 #html_theme = 'alabaster'
 #html_theme = 'sphinxdoc'
-html_theme = 'default'
+#html_theme = 'sphinx_rtd_theme'
 
 # Cloud Theme
-#html_theme = 'cloud'
+html_theme = 'cloud'
 # set the theme path to point to cloud's theme data
-#html_theme_path = [csp.get_theme_dir()]
+html_theme_path = [csp.get_theme_dir()]
 # [optional] set some of the options listed above...
-#html_theme_options = { "roottarget": "index" }
+html_theme_options = { "roottarget": "index" }
 
 # Sphinx Bootstrap Theme
 #html_theme = 'bootstrap'

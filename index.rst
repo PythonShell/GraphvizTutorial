@@ -10,6 +10,7 @@ Graphviz Tutorial 目录
    :maxdepth: 2
 
    chap01
+   chap02
 
 
 参考资料
