@@ -21,10 +21,17 @@ Graphviz 编译的源文件是 dot 文件，把如下的代码保存到 graph01.
     }
 
 
-使用命令 `dot -Tjpg graph01.dot -o graph01.jpg` 编译，可以得到名为 graph01.jpg
+使用命令 :code:`dot -Tjpg graph01.dot -o graph01.jpg` 编译，可以得到名为 graph01.jpg
 的图片，图片内容如下所示。
 
 .. image:: _static/examples/graph01.jpg
+
+在上述的 dot  文件中，定义了一个名为 G  的有向图（ digraph  是有向图的意思），\
+有向图的具体内容紧随定义后的花括号内。花括号体内，定义了点( node )到点的线\
+段( edge )。每一行，以英文分号(;)结尾的整行，定义的是一条连接两个或多个点的有\
+向线段，比如 :code:`main -> parse -> execute` 定义了一条历经三个点\
+(:code:`main`, :code:`parse`, :code:`execute`)的有向线段。 :code:`->` 定义了线\
+段的方向。
 
 
 1.2 让有向图更复杂点
@@ -52,7 +59,7 @@ Graphviz 可以给点(node)或者线(edge)添加格式。
         execute -> compare;
     }
 
-使用命令 `dot -Tjpg graph02.dot -o graph02.jpg` 可以得到如下的图片：
+使用命令 :code:`dot -Tjpg graph02.dot -o graph02.jpg` 可以得到如下的图片：
 
 .. image:: _static/examples/graph02.jpg
 
@@ -74,7 +81,7 @@ Graphviz 支持 UTF8 下的中文。
         Footman -> 刀塔;
     }
 
-使用命令 `dot -Tjpg graph03.dot -o graph03.jpg` 可以得到如下的图片：
+使用命令 :code:`dot -Tjpg graph03.dot -o graph03.jpg` 可以得到如下的图片：
 
 .. image:: _static/examples/graph03.jpg
 
@@ -101,6 +108,12 @@ Graphviz 支持 UTF8 下的中文。
 .. image:: _static/examples/graph04.jpg
 
 
-1.5 
+1.5 内置颜色
 ------------------------------------------------------------------------------
+
+这里列出了基本的颜色，更多信息请参看 `Graphviz Colors`_ 和 `Graphviz Attrs`_ 。
+
+
+.. _Graphviz Colors: http://www.graphviz.org/doc/info/colors.html
+.. _Graphviz Attrs: http://www.graphviz.org/doc/info/attrs.html#k:color
 

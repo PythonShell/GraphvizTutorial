@@ -22,6 +22,7 @@
 
 #import cloud_sptheme as csp
 #import sphinx_bootstrap_theme
+import sphinx_rtd_theme
 
 
 # -- General configuration ------------------------------------------------
@@ -94,7 +95,8 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme = 'sphinxdoc'
+#html_theme = 'sphinxdoc'
+html_theme = 'sphinx_rtd_theme'
 
 # Cloud Theme
 #html_theme = 'cloud'
