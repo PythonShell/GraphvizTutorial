@@ -108,7 +108,32 @@ Graphviz 支持 UTF8 下的中文。
 .. image:: _static/examples/graph04.jpg
 
 
-1.5 内置颜色
+1.5 控制边的起点位置和终点位置
+------------------------------------------------------------------------------
+
+.. code-block:: none
+    :linenos:
+    :caption: graph07.dot
+    :name: Graph 07
+
+    digraph G {
+        node [shape=box];
+        c1:n -> d1 [label=n];
+        c2:ne -> d2:ne [label=ne];
+        c3:e -> d3:ne [label=e];
+        c4:se -> d4:n [label=se];
+        c5:s -> d5:n [label=s];
+        c6:sw -> d6:n [label=sw];
+        c7:w -> d7:nw [label=w];
+        c8:nw -> d8:nw[label=nw];
+    }
+
+编译可以得到如下的图片：
+
+.. image:: _static/examples/graph07.jpg
+
+
+1.6 内置颜色
 ------------------------------------------------------------------------------
 
 这里列出了基本的颜色，更多信息请参看 `Graphviz Colors`_ 和 `Graphviz Attrs`_ 。
